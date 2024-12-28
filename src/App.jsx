@@ -2,11 +2,14 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import {NextUIProvider} from "@nextui-org/react";
+import {Button} from "@nextui-org/button";
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+    <NextUIProvider>
     <>
       <div>
         <a href="https://vite.dev" target="_blank">
@@ -24,11 +27,19 @@ function App() {
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
+        <h1 className="text-3xl font-bold underline text-blue-600">
+      Hello world!
+    </h1>
+    <Button>Press me</Button>
+
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+     
     </>
+    </NextUIProvider>
+
   )
 }
 
