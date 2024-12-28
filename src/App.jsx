@@ -30,7 +30,7 @@ function App() {
         <h1 className="text-3xl font-bold underline text-blue-600">
       Hello world!
     </h1>
-    <Button>Press me</Button>
+    <Button>Press me Now</Button>
 
       </div>
       <p className="read-the-docs">
