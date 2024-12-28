@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #edf9fc;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,14 +29,17 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  flex-direction: column; /* Stacked layout for responsiveness */
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  padding: 0; /* Removed extra padding for better control */
+  background-color: var(--background-color);
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 2.5rem;
+  line-height: 1.2;
 }
 
 button {
@@ -48,14 +51,27 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s, background-color 0.25s;
 }
 button:hover {
   border-color: #646cff;
+  background-color: #2a2a2a;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem; /* Adjust heading size for smaller screens */
+    line-height: 1.3;
+  }
+
+  button {
+    padding: 0.5em 1em; /* Adjust button size for mobile */
+    font-size: 0.9em;
+  }
 }
 
 @media (prefers-color-scheme: light) {
