@@ -57,7 +57,7 @@ const Header = () => {
                     onPress={toggleMenu}
                     className="block md:hidden ml-auto w-10 h-10 p-0 
                                rounded-lg bg-[#ffffff]/15 hover:bg-[#ffffff]/15 focus:bg-[#ffffff]/15 
-                               focus:ring-0  transition-all flex
+                               focus:ring-0 focus:border-none focus:outline-none transition-all flex
                                focus:outline-none justify-end"
                   >
                     {/* Enhanced Hamburger Icon */}
