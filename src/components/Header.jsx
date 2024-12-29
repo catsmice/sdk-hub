@@ -40,7 +40,7 @@ const Header = () => {
 
           {/* Mobile: Hamburger + Dropdown */}
           <NavbarContent>
-            <div className="block md:hidden ml-auto">
+            <div className="block border-none md:hidden ml-auto">
               <Dropdown
                 isOpen={menuOpen}
                 onOpenChange={setMenuOpen}
