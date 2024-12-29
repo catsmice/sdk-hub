@@ -57,7 +57,7 @@ const Header = () => {
                   aria-label="Toggle Menu"
                   onPress={toggleMenu}
                   className="block md:hidden ml-auto w-10 h-10 p-0 
-                             rounded-lg bg-[#ffffff]/95 border-[#ffffff]/95 hover:[#ffffff]/95 
+                             rounded-lg bg-[#ffffff]/95 border-[#ffffff]/95 hover:[#ffffff]/95 focus:[#ffffff]/95
                               transition-all flex items-center justify-center
                              focus:outline-none" 
                 >
