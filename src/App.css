@@ -13,6 +13,6 @@
 
 @media (min-width: 1280px) {
   #root {
-    padding: 2rem; /* Larger padding for widescreens */
+    padding: 0; /* Larger padding for widescreens */
   }
 }
