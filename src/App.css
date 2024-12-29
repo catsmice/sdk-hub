@@ -1,18 +1,6 @@
 #root {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 1rem; /* Reduced padding for better spacing on small screens */
+  padding: 0rem; /* Reduced padding for better spacing on small screens */
   text-align: left; /* Changed to left-align for better readability */
-}
-
-@media (max-width: 768px) {
-  #root {
-    padding: 1rem; /* Smaller padding for mobile */
-  }
-}
-
-@media (min-width: 1280px) {
-  #root {
-    padding: 0; /* Larger padding for widescreens */
-  }
 }

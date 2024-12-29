@@ -6,22 +6,30 @@ import Footer from './components/Footer';
 import SDKDownloadSection from './components/SDKDownloadSection';
 import RecentUpdatesSection from './components/RecentUpdatesSection';
 import FeaturesSection from './components/FeaturesSection';
+import APIDocIOS from './APIDocIOS';
+import { BrowserRouter, Routes, Route } from "react-router";
 
+const Home = () => {
+  return (
+    <div id="root" className="mx-auto max-w-[1280px] px-4">
+      <Header />
+      <SDKDownloadSection />
+      <RecentUpdatesSection />
+      <FeaturesSection />
+      <Footer />
+    </div>
+  )
+}
 
 function App() {
   return (    
     <NextUIProvider>
-      {/* Header outside of the max-width container */}
-
-      {/* This container has the max-width constraint */}
-      <div id="root" className="mx-auto max-w-[1280px] px-4">
-      <Header />
-
-        <SDKDownloadSection />
-        <RecentUpdatesSection />
-        <FeaturesSection />
-        <Footer />
-      </div>
+      <BrowserRouter>    
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/apidoc_ios" element={<APIDocIOS />} />
+        </Routes>
+      </BrowserRouter>      
     </NextUIProvider>
   );
 }
