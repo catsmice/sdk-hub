@@ -5,7 +5,7 @@ import {
 
 const SDKDownloadSection = () => {
   return (
-    <section className="max-w-screen-xl mx-auto py-12 px-6 flex flex-col items-center text-center bg-[#f5fcff]">
+    <section className="downloadbg max-w-screen-xl mx-auto py-12 px-6 flex flex-col items-center text-center bg-[#e5fcff]">
       <h2 className="text-3xl text-gray-900 mb-6">Quick SDK Downloads</h2>
 
       <div className="flex flex-wrap gap-4 items-center justify-center">

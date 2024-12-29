@@ -1,30 +1,33 @@
 import React from "react";
 import { Button } from "@nextui-org/react";
+import feature_1 from "../assets/feature_1.jpg";
+import feature_2 from "../assets/feature_2.jpg";
+import feature_3 from "../assets/feature_3.jpg";
 
 const FeaturesSection = () => {
   const features = [
     {
-      title: "主打功能 1",
-      description: "主打功能 1 說明",
+      title: "海量廣告",
+      description: "接一家等於接多家，對接各種廣告渠道",
       time: "2 hours ago",
-      image: "https://via.placeholder.com/150", // Replace with actual image URL
+      image: feature_1, // Replace with actual image URL
     },
     {
-      title: "主打功能 2",
-      description: "主打功能 2 說明",
+      title: "即插即用 容易整合",
+      description: "一鍵完成下載，三步驟完成整合",
       time: "5 hours ago",
-      image: "https://via.placeholder.com/150", // Replace with actual image URL
+      image: feature_2, // Replace with actual image URL
     },
     {
-      title: "主打功能 3",
-      description: "主打功能 3 說明",
+      title: "多樣化素材形式",
+      description: "點擊率提高 30%，收入提高 10%",
       time: "8 hours ago",
-      image: "https://via.placeholder.com/150", // Replace with actual image URL
+      image: feature_3, // Replace with actual image URL
     },
   ];
 
   return (
-    <section className="max-w-screen-xl mx-auto py-12 px-6 bg-sky-50">
+    <section className="featurebg max-w-screen-xl mx-auto py-12 px-6 bg-sky-50">
       {/* Section Title */}
       <div className="mb-8 text-center">
         <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900 pb-2 border-b-2 border-gray-300 inline-block">

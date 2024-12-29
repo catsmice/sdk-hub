@@ -5,13 +5,14 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link,
   Button,
   Dropdown,
   DropdownTrigger,
   DropdownMenu,
   DropdownItem,
 } from "@nextui-org/react";
+import { Link } from "react-router";
+
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -121,7 +122,7 @@ const Header = () => {
             "
           >
             <NavbarItem>
-              <Link
+              <Link to="/apidoc_ios"
                 href="#"
                 className="text-base text-gray-600 hover:text-[#29c3e5]"
               >
