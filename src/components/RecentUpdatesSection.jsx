@@ -40,7 +40,7 @@ const RecentUpdatesSection = () => {
 };
 
 const UpdateCard = ({ title, description, time }) => (
-  <div className="bg-[#f7fafc] p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+  <div className="bg-[#e7fafc] p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow">
     <h3 className="text-base font-semibold text-gray-800 font-montserrat">
       {title}
     </h3>

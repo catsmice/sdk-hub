@@ -21,8 +21,8 @@ const Header = () => {
   };
 
   return (
-    <div className="w-full bg-white shadow-sm border-b border-gray-100">
-      <Navbar isBordered variant="floating" className="w-full px-1 md:px-8">
+    <div className="w-full shadow-sm border-b border-gray-200 bg-[#ffffff]">
+      <Navbar isBordered variant="floating" className="w-full md:p-0">
         <div className="flex w-full items-center justify-between flex-wrap">
           {/* Left Section: Logo / Title */}
           <NavbarContent>
@@ -39,6 +39,7 @@ const Header = () => {
           </NavbarContent>
 
           {/* Mobile: Hamburger + Dropdown */}
+          <NavbarContent>
           <div className="block md:hidden ml-auto">
             <Dropdown
               isOpen={menuOpen}
@@ -56,8 +57,8 @@ const Header = () => {
                   aria-label="Toggle Menu"
                   onPress={toggleMenu}
                   className="block md:hidden ml-auto w-10 h-10 p-0 
-                             rounded-lg bg-gray-200 hover:bg-gray-200 
-                             shadow-md transition-all flex items-center justify-center
+                             rounded-lg bg-[#ffffff]/95 border-[#ffffff]/95 hover:[#ffffff]/95 
+                              transition-all flex items-center justify-center
                              focus:outline-none" 
                 >
                   {/* Enhanced Hamburger Icon */}
@@ -108,7 +109,7 @@ const Header = () => {
               </DropdownMenu>
             </Dropdown>
           </div>
-
+          </NavbarContent>
           {/* Desktop: Nav Links (hidden on small screens) */}
           <NavbarContent
             className="
