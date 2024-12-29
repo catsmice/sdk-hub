@@ -5,6 +5,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import SDKDownloadSection from './components/SDKDownloadSection';
 import RecentUpdatesSection from './components/RecentUpdatesSection';
+import FeaturesSection from './components/FeaturesSection';
+
 
 function App() {
   return (    
@@ -17,6 +19,7 @@ function App() {
 
         <SDKDownloadSection />
         <RecentUpdatesSection />
+        <FeaturesSection />
         <Footer />
       </div>
     </NextUIProvider>

@@ -40,76 +40,76 @@ const Header = () => {
 
           {/* Mobile: Hamburger + Dropdown */}
           <NavbarContent>
-          <div className="block md:hidden ml-auto">
-            <Dropdown
-              isOpen={menuOpen}
-              onOpenChange={setMenuOpen}
-              placement="bottom-right"
-            >
-              <DropdownTrigger>
-                <Button
-                  auto
-                  flat
-                  /** NextUI focus-related props */
-                  disableAutoFocus
-                  disableFocusAnimation
-                  disableRipple
-                  aria-label="Toggle Menu"
-                  onPress={toggleMenu}
-                  className="block md:hidden ml-auto w-10 h-10 p-0 
-                             rounded-lg bg-[#ffffff]/95 border-[#ffffff]/95 hover:[#ffffff]/95 focus:[#ffffff]/95
-                              transition-all flex items-center justify-center
-                             focus:outline-none" 
-                >
-                  {/* Enhanced Hamburger Icon */}
-                  <div className="relative w-6 h-6">
-                    {/* Top line */}
-                    <span
-                      className={`absolute block h-0.5 w-6 bg-current transform transition duration-300 ease-in-out ${
-                        menuOpen ? "rotate-45 top-[12px]" : "top-0"
-                      }`}
-                    />
-                    {/* Middle line */}
-                    <span
-                      className={`absolute block h-0.5 w-6 bg-current transform transition duration-300 ease-in-out ${
-                        menuOpen ? "opacity-0" : "top-[12px]"
-                      }`}
-                    />
-                    {/* Bottom line */}
-                    <span
-                      className={`absolute block h-0.5 w-6 bg-current transform transition duration-300 ease-in-out ${
-                        menuOpen ? "-rotate-45 bottom-[12px]" : "bottom-0"
-                      }`}
-                    />
-                  </div>
-                </Button>
-              </DropdownTrigger>
+            <div className="block md:hidden ml-auto">
+              <Dropdown
+                isOpen={menuOpen}
+                onOpenChange={setMenuOpen}
+                placement="bottom-right"
+              >
+                <DropdownTrigger>
+                  <Button
+                    auto
+                    flat
+                    disableAutoFocus
+                    disableFocusAnimation
+                    disableRipple
+                    aria-label="Toggle Menu"
+                    onPress={toggleMenu}
+                    className="block md:hidden ml-auto w-10 h-10 p-0 
+                               rounded-lg bg-[#ffffff]/15 hover:bg-[#ffffff]/15 focus:bg-[#ffffff]/15 
+                               focus:ring-0  transition-all flex
+                               focus:outline-none justify-end"
+                  >
+                    {/* Enhanced Hamburger Icon */}
+                    <div className="relative w-6 h-6">
+                      {/* Top line */}
+                      <span
+                        className={`absolute block h-0.5 w-6 bg-current transform transition duration-300 ease-in-out ${
+                          menuOpen ? "rotate-45 top-[12px]" : "top-0"
+                        }`}
+                      />
+                      {/* Middle line */}
+                      <span
+                        className={`absolute block h-0.5 w-6 bg-current transform transition duration-300 ease-in-out ${
+                          menuOpen ? "opacity-0" : "top-[12px]"
+                        }`}
+                      />
+                      {/* Bottom line */}
+                      <span
+                        className={`absolute block h-0.5 w-6 bg-current transform transition duration-300 ease-in-out ${
+                          menuOpen ? "-rotate-45 bottom-[12px]" : "bottom-0"
+                        }`}
+                      />
+                    </div>
+                  </Button>
+                </DropdownTrigger>
 
-              <DropdownMenu aria-label="Mobile Navigation" variant="shadow">
-                <DropdownItem key="ios" textValue="iOS">
-                  <Link href="#" className="text-gray-600 hover:text-[#29c3e5]">
-                    iOS
-                  </Link>
-                </DropdownItem>
-                <DropdownItem key="tvos" textValue="tvOS">
-                  <Link href="#" className="text-gray-600 hover:text-[#29c3e5]">
-                    tvOS
-                  </Link>
-                </DropdownItem>
-                <DropdownItem key="android" textValue="Android">
-                  <Link href="#" className="text-gray-600 hover:text-[#29c3e5]">
-                    Android
-                  </Link>
-                </DropdownItem>
-                <DropdownItem key="changelog" textValue="Update">
-                  <Link href="#" className="text-gray-600 hover:text-[#29c3e5]">
-                    更新日誌
-                  </Link>
-                </DropdownItem>
-              </DropdownMenu>
-            </Dropdown>
-          </div>
+                <DropdownMenu aria-label="Mobile Navigation" variant="shadow">
+                  <DropdownItem key="ios" textValue="iOS">
+                    <Link href="#" className="text-gray-600 hover:text-[#29c3e5]">
+                      iOS
+                    </Link>
+                  </DropdownItem>
+                  <DropdownItem key="tvos" textValue="tvOS">
+                    <Link href="#" className="text-gray-600 hover:text-[#29c3e5]">
+                      tvOS
+                    </Link>
+                  </DropdownItem>
+                  <DropdownItem key="android" textValue="Android">
+                    <Link href="#" className="text-gray-600 hover:text-[#29c3e5]">
+                      Android
+                    </Link>
+                  </DropdownItem>
+                  <DropdownItem key="changelog" textValue="Update">
+                    <Link href="#" className="text-gray-600 hover:text-[#29c3e5]">
+                      更新日誌
+                    </Link>
+                  </DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
+            </div>
           </NavbarContent>
+
           {/* Desktop: Nav Links (hidden on small screens) */}
           <NavbarContent
             className="
