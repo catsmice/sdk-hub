@@ -58,7 +58,7 @@ const Header = () => {
                     className="block md:hidden ml-auto w-10 h-10 p-0 
                                rounded-lg bg-[#ffffff]/15 hover:bg-[#ffffff]/15 focus:bg-[#ffffff]/15 
                                focus:ring-0 focus:border-none focus:outline-none transition-all flex
-                               focus:outline-none justify-end"
+                               focus:outline-none justify-end flat"
                   >
                     {/* Enhanced Hamburger Icon */}
                     <div className="relative w-6 h-6">
