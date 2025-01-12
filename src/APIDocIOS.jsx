@@ -14,7 +14,7 @@ const APIDocIOS = () => {
           <NavbarBrand className="flex items-center">
             <img src={logo} alt="SDK Hub Logo" className="h-4 object-contain" />
             <p className="text-lg md:text-xl text-gray-900  ml-4">
-              iOS SDK Documentation
+              iOS SDK 
             </p>
           </NavbarBrand>
           <button
