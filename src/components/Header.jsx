@@ -87,17 +87,17 @@ const Header = () => {
 
                 <DropdownMenu aria-label="Mobile Navigation" variant="shadow">
                   <DropdownItem key="ios" textValue="iOS">
-                    <Link to="/apidoc_ios" href="#" className="text-gray-600 hover:text-[#29c3e5]">
+                    <Link to="/apidoc_ios"  className="text-gray-600 hover:text-[#29c3e5]">
                       iOS
                     </Link>
                   </DropdownItem>
                   <DropdownItem key="tvos" textValue="tvOS">
-                    <Link to="/apidoc_ios" href="#" className="text-gray-600 hover:text-[#29c3e5]">
+                    <Link to="/apidoc_ios"  className="text-gray-600 hover:text-[#29c3e5]">
                       tvOS
                     </Link>
                   </DropdownItem>
                   <DropdownItem key="android" textValue="Android">
-                    <Link to="/apidoc_ios" href="#" className="text-gray-600 hover:text-[#29c3e5]">
+                    <Link to="/apidoc_ios"  className="text-gray-600 hover:text-[#29c3e5]">
                       Android
                     </Link>
                   </DropdownItem>
